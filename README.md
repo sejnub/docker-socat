@@ -9,6 +9,10 @@ sudo socat -v UDP-LISTEN:514,fork TCP:syslog.internal:515
 # This seems to work great.
 sudo socat -v UDP4-RECVFROM:514,fork TCP:syslog.internal:515
 
+# Untested
+sudo socat -v UDP-RECV:514,fork TCP:syslog.internal:515
+
+
 ```
 
 ## Tests
