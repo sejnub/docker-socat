@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "#### first_start.sh has started."
 
 # export DOCKER_SOCAT_BRANCH=master
 # 

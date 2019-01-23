@@ -17,9 +17,13 @@ export DOCKER_SOCAT_BRANCH=master
 
 cd ~
 curl https://raw.githubusercontent.com/sejnub/docker-socat/master/generic_scripts/first_start.sh | bash
+
+
 cd ~
 cd ~/docker-socat/generic_scripts
 ls -asl
+
+
 
 ```
 
