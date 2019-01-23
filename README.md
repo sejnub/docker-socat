@@ -1,17 +1,11 @@
 # docker-socat
 
+## coldstart
 
-```bash
+```sh
 
-# Does not work so good
-sudo socat -v UDP-LISTEN:514,fork TCP:syslog.internal:515
-
-# nope!
-sudo socat -v UDP-RECV:514,fork TCP:syslog.internal:515
-
-# This seems to work great.
-sudo socat -v UDP4-RECVFROM:514,fork TCP:syslog.internal:515
-
+cd ~
+curl https://raw.githubusercontent.com/sejnub/docker-socat/master/scripts/coldstart.sh | bash
 
 ```
 
@@ -31,12 +25,18 @@ echo "<25>TCP syslog.internal 515" | nc -v    -w 0 syslog.internal 515
 
 ```
 
-## coldstart
+## Tested socat commands
 
-```sh
+```bash
 
-cd ~
-curl https://raw.githubusercontent.com/sejnub/docker-socat/master/scripts/coldstart.sh | bash
+# Does not work so good
+sudo socat -v UDP-LISTEN:514,fork TCP:syslog.internal:515
+
+# nope!
+sudo socat -v UDP-RECV:514,fork TCP:syslog.internal:515
+
+# This seems to work great.
+sudo socat -v UDP4-RECVFROM:514,fork TCP:syslog.internal:515
 
 
 ```
