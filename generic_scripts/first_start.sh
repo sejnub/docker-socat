@@ -12,7 +12,7 @@ echo "#### first_start.sh has started."
 
 # clone
 cd ~
-curl https://raw.githubusercontent.com/sejnub/docker-socat/$DOCKER_SOCAT_BRANCH/generic_scripts/first_clone.sh | bash
+curl https://raw.githubusercontent.com/sejnub/docker-socat/$DOCKER_SOCAT_BRANCH/generic_scripts/clone.sh | bash
 
 
 cd ~; cd ~/docker-socat/generic_scripts
