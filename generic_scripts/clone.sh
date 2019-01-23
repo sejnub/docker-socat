@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 # To change this for another repo
 # - global replace: DOCKER_SOCAT -> ...
 # - global replace: docker-socat -> ...
