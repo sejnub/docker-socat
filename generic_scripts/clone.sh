@@ -10,9 +10,6 @@ DEFAULT_BRANCH=master
 
 echo "#### clone.sh has started."
 
-
-echo "#### clone.sh has started."
-
 if [ $# -gt 0 ]; then
   DOCKER_SOCAT_BRANCH=$1
   echo "clone.sh was called with the branch parameter '$DOCKER_SOCAT_BRANCH'. So I will use that."
