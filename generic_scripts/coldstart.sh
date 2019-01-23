@@ -6,7 +6,7 @@ export DOCKER_SOCAT_BRANCH=master
 # - global replace: DOCKER_SOCAT -> ...
 # - global replace: docker-socat -> ...
 
-echo "#### clone.sh has started."
+echo "#### coldstart.sh has started."
 
 
 #########
@@ -27,4 +27,21 @@ cd ~/docker-socat
 git checkout $DOCKER_SOCAT_BRANCH
 cd ~
 
-echo "#### clone.sh has ended."
+
+#########
+# build #
+#########
+
+cd ~; cd ~/docker-socat/generic_scripts
+./build.sh
+
+
+#######
+# run #
+#######
+
+cd ~; cd ~/docker-socat/generic_scripts
+./run.sh
+
+
+echo "#### coldstart.sh has ended."
