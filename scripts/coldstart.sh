@@ -32,7 +32,7 @@ cd ~
 # build #
 #########
 
-cd ~; cd ~/docker-socat/generic_scripts
+cd ~; cd ~/docker-socat/scripts
 ./build.sh
 
 
@@ -40,7 +40,7 @@ cd ~; cd ~/docker-socat/generic_scripts
 # run #
 #######
 
-cd ~; cd ~/docker-socat/generic_scripts
+cd ~; cd ~/docker-socat/scripts
 ./run.sh
 
 
