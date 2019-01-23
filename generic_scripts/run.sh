@@ -6,7 +6,7 @@ echo "#### run.sh has started."
 docker rm -f socat
 
 docker run             \
-  -it                  \
+  -d                   \
   --name socat         \
   --restart always     \
   sejnub/socat:latest
